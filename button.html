@@ -1,0 +1,93 @@
+<section class="hero-section">
+    <div class="container text-center">
+        <!-- Teks Animatif -->
+        <p class="hero-subtext" data-aos="fade-up" data-aos-delay="100">
+           Tombol yang barusan ditekan, nantinya akan mengarah ke halaman utama website. Tampilan ini hanya uji coba
+        </p>
+
+    </div>
+</section>
+
+<!-- CSS Tambahan -->
+<style>
+    /* Hero Section */
+    .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+        background: linear-gradient(135deg, #004085, #007bff);
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    /* Teks Utama */
+    .hero-text {
+        font-size: 3rem;
+        font-weight: bold;
+        opacity: 0;
+        transform: scale(0.8);
+        animation: fadeInScale 1s ease-in-out forwards;
+    }
+
+    .hero-subtext {
+        font-size: 4rem;
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out forwards;
+        animation-delay: 0.5s;
+    }
+
+    .highlight {
+        color: #ffcc00;
+    }
+
+    /* Tombol */
+    .custom-btn {
+        margin-top: 20px;
+        padding: 14px 30px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+        display: inline-flex;
+        align-items: center;
+        background-color: #ffcc00;
+        color: #004085;
+        border: none;
+    }
+
+    .custom-btn i {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .custom-btn:hover {
+        background-color: #ffd633;
+        box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
+    }
+
+    .custom-btn:hover i {
+        transform: translateX(5px);
+    }
+
+    /* Animasi */
+    @keyframes fadeInScale {
+        0% {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
